@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<head>
+    <title>Todo List Login</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+        .done {
+            text-decoration: line-through;
+        }
+    </style>
+</head>
+
+<body>
+	<div class="container">
+	<h3>Please Log in<h3>
+		<div class="container">
+			<form action="/loggedin">
+				<div class="row">
+					<div class="col-sm-6">
+						User name:
+						<input type="text" size="50" name ="User_Name" value="WilliamCheung" />
+					</div>
+					<div class="col-sm-3">
+						Password:
+						<input type="text" name="Password" value="" />
+					</div>
+					<div class="cpl-sm-3">
+						<input type="submit" value="login">
+				</div>
+			</form>
+		</div>
+		<button onclick="location.href='/newAccount'">Create Account</button>
+	</div>
+</body>
+
+
+</html>
